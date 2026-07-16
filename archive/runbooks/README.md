@@ -51,7 +51,7 @@
 3) Jenkins/Maven/Ansible
     - Create a Jenkins VM instance 
     - Name: `Jenkins/Maven/Ansible`
-    - AMI: `Ubuntu 24.04`
+    - AMI: `Amazon Linux 2`
     - Instance type: `t2.medium`
     - Key pair: `Select` or `create a new keypair`
     - Security Group (Edit/Open): `8080, 9100` and `22 to 0.0.0.0/0`
@@ -126,7 +126,7 @@
     - Key pair: `Select a keypair`
     - Security Group (Eit/Open): `9090` and `22 to 0.0.0.0/0`
     - IAM instance profile: Select the `AWS-EC2FullAccess-Role`
-    - User data (Copy the following user data): https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/prometheus-and-grafana-install/userdatas/install-prometheus.sh 
+    - User data: https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/prometheus-and-grafana-install/userdatas/install-prometheus.sh
     - Launch Instance
 
 10) Grafana
@@ -136,9 +136,8 @@
     - Instance type: `t2.micro`
     - Key pair: `Select a keypair`
     - Security Group (Eit/Open): `3000` and `22 to 0.0.0.0/0`
-    - User data (Copy the following user data): https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/prometheus-and-grafana-install/userdatas/install-grafana.sh
+    - User data: https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/prometheus-and-grafana-install/userdatas/install-grafana.sh
     - Launch Instance
-    http://PrometheusPublicOrPrivateIPaddress:9090
 
 11) EC2 (Splunk)
     - Create a Splunk/Indexer VM instance
@@ -203,6 +202,7 @@
 
 ### Configure The "Node Exporter" on the "Dev", "Stage" and "Prod" instances including your "Pipeline Infra"
   - Login/SSH into the "Dev-Env", "Stage-Env" and "Prod-Env" VM instance
+  - User data: https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/prometheus-and-grafana-install/userdatas/install-node-exporter.sh
   - Perform the following operations on all of them
   - Install git by running: `sudo yum install git -y `
   - Clone repository: `git clone https://github.com/awanmbandi/realworld-cicd-pipeline-project.git`
@@ -219,6 +219,7 @@
 
 ### Configure The "Node Exporter" on the "Jenkins-Maven-Ansible", "Nexus" and "SonarQube" instances 
   - Login/SSH into the `"Jenkins-Maven-Ansible"`, `"Nexus"` and `"SonarQube"` VM instance
+  - User data: https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/prometheus-and-grafana-install/userdatas/install-node-exporter.sh
   - Perform the following operations on all of them
   - Install git: 
     - Jenkins/Maven/Ansible and Nexus VMs: `sudo yum install git -y`   
@@ -330,7 +331,7 @@ wget -O splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.deb "https://download.sp
 - Install the Forwarder
 ```bash
 ls -al
-sudo apt-get install ./splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.deb -y
+sudo yum install ./splunkforwarder-10.0.0-e8eb0c4654f8-linux-amd64.deb -y
 ```
 
 - Change to the `splunkforwarder bin` directory and start the forwarder
@@ -494,7 +495,7 @@ cd /opt/splunk/bin
               - Kind: Secret text            
               - Secret: Place the Integration Token Credential ID (Note: Generate for slack setup)
               - ID: ``Slack-Token``
-              - Description: `Slack-Token`
+              - Description: `slack-token`
               - Click on `Create`  
 
       3)  ##### Nexus Credentials (Username and Password)
@@ -522,9 +523,9 @@ cd /opt/splunk/bin
       4)  ##### Ansible deployment server credential (username & password)
           - Click on ``Add Credentials``
           - Kind: Username with password          
-          - Username: ``ansible``
+          - Username: ``ansibleadmin``
           - Enable Treat username as secret
-          - Password: ``ansible``
+          - Password: ``ansibleadmin``
           - ID: ``Ansible-Credential``
           - Description: `Ansible-Credential`
           - Click on `Create`   
@@ -543,7 +544,6 @@ cd /opt/splunk/bin
         - Go to section `Slack`
             - `NOTE:` *Make sure you still have the Slack Page that has the `team subdomain` & `integration token` open*
             - Workspace: **Replace with `Team Subdomain` value** (created above)
-                - **Team SubDomain:** `realworldcicdpipeline`
             - Credentials: select the `Slack-Token` credentials (created above) 
             - Default channel / member id: `#PROVIDE_YOUR_CHANNEL_NAME_HERE`
             - Click on `Test Connection`
@@ -586,6 +586,7 @@ cd /opt/splunk/bin
           waitForQualityGate abortPipeline: true
           }
        }
+    }
     ```
      - Run Your Pipeline To Test Your Quality Gate (It should PASS QG)
      - **(OPTIONAL)** FAIL Your Quality Gate: Go back to SonarQube -->> Open your Project -->> Click on Quality Gates at the top -->> Select your Project Quality Gate -->> Click EDIT -->> Change the Value to “0” -->> Update Condition
@@ -721,6 +722,7 @@ A) Update Maven `POM.xml` file
             ]
           )
       }
+  }
   ```
 - After confirming all changes, go ahead and save, then push to GitHub.
     - Add the changes: `git add -A`
@@ -764,7 +766,6 @@ echo "ansibleadmin ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
         - Click `Add webhook`
             - Payload URL: http://JENKINS-PUBLIC-IP-ADDRESS/github-webhook/
             - Content type: `application/json`
-            - SSL Verification: `Disable (not recommended)`
             - Active: Confirm it is `Enable`
             - Click on `Add Webhook`
 
