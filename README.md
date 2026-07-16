@@ -35,28 +35,28 @@
     ![ProjectRepositoryCode!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/project-repository-code2.png)
 
 2) Create An IAM Profile/Role For The Ansible Automation Engine (Dynamic Inventory)
-- Create an EC2 Service Role in IAM with AmazonEC2FullAccess Privilege 
-- Navigate to IAM
+- Create an EC2 Service Role in IAM with `AdministratorAccess` Privilege 
+- Navigate to `IAM`
 ![IAM!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/Screen%20Shot%202023-10-03%20at%206.20.44%20PM.png)
     - Click on `Roles`
     - Click on `Create Role`
     - Select `Service Role`
     - Use Case: Select `EC2`
     - Click on `Next` 
-    - Attach Policy: `AmazonEC2FullAccess`
+    - Attach Policy: `AdministratorAccess`
     - Click `Next` 
-    - Role Name: `AWS-EC2FullAccess-Role`
+    - Role Name: `AWS-AdministratorAccess-Role`
     - Click `Create`
 
 3) Jenkins/Maven/Ansible
     - Create a Jenkins VM instance 
-    - Name: `Jenkins/Maven/Ansible`
+    - Name: `Jenkins-Maven-Ansible`
     - AMI: `Ubuntu 24.04`
-    - Instance type: `t2.medium`
+    - Instance type: `c7i-flex.large (2 vCPU and 4 GiB Memory)`
     - Key pair: `Select` or `create a new keypair`
     - Security Group (Edit/Open): `8080, 9100` and `22 to 0.0.0.0/0`
-    - IAM instance profile: Select the `AWS-EC2FullAccess-Role`
-    - User data (Copy the following user data): https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/maven-nexus-sonarqube-jenkins-install/jenkins-install.sh
+    - IAM instance profile: Select the `AWS-AdministratorAccess-Role`
+    - User data (Copy the following user data): https://github.com/UtamaDalington/Maven-SonarQube-Nexus-Jenkins-installations/blob/main/jenkins-maven-ansible-install.sh
     - Launch Instance
 
 4) SonarQube
