@@ -63,20 +63,20 @@
     - Create a SonarQube VM instance 
     - Name: `SonarQube`
     - AMI: `Ubuntu 24.04`
-    - Instance type: `t2.medium`
+    - Instance type: `c7i-flex.large (2 vCPU and 4 GiB Memory)`
     - Key pair: `Select a keypair`
     - Security Group (Eit/Open): `9000, 9100` and `22 to 0.0.0.0/0`
-    - User data (Copy the following user data): https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/maven-nexus-sonarqube-jenkins-install/sonarqube-install.sh
+    - User data (Copy the following user data): https://github.com/UtamaDalington/Maven-SonarQube-Nexus-Jenkins-installations/blob/main/sonarqube-install.sh
     - Launch Instance
 
 5) Nexus
     - Create a Nexus VM instance 
     - Name: `Nexus`
     - AMI: `Ubuntu 24.04`
-    - Instance type: `t2.large`
+    - Instance type: `m7i-flex.large (2 vCPU and 8 GiB Memory)`
     - Key pair: `Select a keypair`
     - Security Group (Eit/Open): `8081, 9100` and `22 to 0.0.0.0/0`
-    - User data (Copy the following user data): https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/maven-sonarqube-nexus-jenkins-install/nexus-install-t2large.sh
+    - User data (Copy the following user data): https://github.com/UtamaDalington/Maven-SonarQube-Nexus-Jenkins-installations/blob/main/nexus-install-t2large.sh
     - Launch Instance
 
 6) EC2 (Dev Environment)
