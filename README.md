@@ -30,7 +30,7 @@
     - Open your `Terminal`
         - Add the code to git, commit and push it to your upstream branch "main or master"
         - Add the changes: `git add -A`
-        - Commit changes: `git commit -m "Updated some code"`
+        - Commit changes: `git commit -m "added project source code"`
         - Push to GitHub: `git push`
     - Confirm that the code is now available on GitHub as shown below...
     <img width="1615" height="780" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/6caca36f-d970-4283-bf7d-4f78dfe23209" />
@@ -174,43 +174,40 @@
     - Go back to your local, open your `End-to-End-Jenkins-CI-CD-Pipeline-Project` repo/folder/directory on VSCODE
     - Open your `Jenkinsfile`
     - Update the slack channel name on line `"133"` (there about)
-    - Change the name from whatever that is there to your Slack Channel Name `YOUR_INITIAL-cicd-pipeline-alerts`
+    - Change the name from whatever that is there to your Slack Channel Name `YOUR_INITIAL-jenkins-cicd-pipeline-alerts`
         - Bring up your `Terminal` (Depending on your machine type) and run the following commands
         - Add the changes to git: `git add -A`
         - Commit the changes: `git commit -m "updated Jenkinsfile with slack channel name"`
         - Push the changes to GitHub: `git push` 
     - Confirm that the changes are available on GitHub
 
-## Configure All Systems
+## Make sure all systems are configured
 ### Configure Promitheus With (Service Discovery)
   - Login/SSH to your Prometheus Server
-  - Clone repository: `git clone https://github.com/awanmbandi/realworld-cicd-pipeline-project.git`
-  - Change directory: `cd realworld-cicd-pipeline-project`
-  - Swtitch branch: `git switch prometheus-and-grafana-install`
-  - Confirm Branch Switch: `git branch` and `ls -al`
+  - Clone repository: `git clone https://github.com/UtamaDalington/Maven-SonarQube-Nexus-Jenkins-installations.git`
+  - Change directory: `cd Maven-SonarQube-Nexus-Jenkins-installations`
+  - Confirm Branch: `git branch` and `ls -al`
   - Change directory to Service Discovery: `cd service-discovery`
-  - Install Prometheus: `bash install-prometheus.sh`
+  - Install Prometheus: `bash prometheus-install.sh`
   - Confirm the status shows *"Active (running)"*
   - Exit
 
 ### Configure Grafana
   - Login/SSH to your Grafana Server
-  - Clone repository: `git clone https://github.com/awanmbandi/realworld-cicd-pipeline-project.git`
-  - Change directory: `cd realworld-cicd-pipeline-project`
-  - Swtitch branch: `git switch prometheus-and-grafana-install`
-  - Confirm Branch Switch: `git branch` and `ls -al`
-  - Install Prometheus: `bash install-grafana.sh`
+  - Clone repository: `git clone https://github.com/UtamaDalington/Maven-SonarQube-Nexus-Jenkins-installations.git`
+  - Change directory: `cd Maven-SonarQube-Nexus-Jenkins-installations`
+  - Confirm Branch: `git branch` and `ls -al`
+  - Install Prometheus: `bash grafana-install.sh`
   - Confirm the status shows *"Active (running)"*
   - Exit
 
 ### Configure The "Node Exporter" on the "Dev", "Stage" and "Prod" instances including your "Pipeline Infra"
   - Login/SSH into the "Dev-Env", "Stage-Env" and "Prod-Env" VM instance
   - Perform the following operations on all of them
-  - Install git by running: `sudo yum install git -y `
-  - Clone repository: `git clone https://github.com/awanmbandi/realworld-cicd-pipeline-project.git`
-  - Change directory: `cd realworld-cicd-pipeline-project`
-  - Swtitch branch: `git switch prometheus-and-grafana-install`
-  - Confirm Branch Switch: `git branch` and `ls -al` *(to confirm you have the branch files)*
+  - Install git by running: `sudo apt install git -y`
+  - Clone repository: `git clone https://github.com/UtamaDalington/Maven-SonarQube-Nexus-Jenkins-installations.git`
+  - Change directory: `cd Maven-SonarQube-Nexus-Jenkins-installations`
+  - Confirm Branch: `git branch` and `ls -al` *(to confirm you have the branch files)*
   - Install The Node Exporter: `bash install-node-exporter.sh`
   - Confirm the status shows *"Active (running)"*
   - Access the Node Exporters running on port "9100", open your browser and run the below
@@ -223,12 +220,10 @@
   - Login/SSH into the `"Jenkins-Maven-Ansible"`, `"Nexus"` and `"SonarQube"` VM instance
   - Perform the following operations on all of them
   - Install git: 
-    - Jenkins/Maven/Ansible and Nexus VMs: `sudo yum install git -y`   
-    - SonarQube VM: `sudo apt install git -y`
-  - Clone repository: `git clone https://github.com/awanmbandi/realworld-cicd-pipeline-project.git`
-  - Change directory: `cd realworld-cicd-pipeline-project`
-  - Swtitch branch: `git switch prometheus-and-grafana-install`
-  - Confirm Branch Switch: `git branch` and `ls -al` *(to confirm you have the branch files)*
+    - Jenkins/Maven/Ansible, SonarQube and Nexus VMs: `sudo apt install git -y`   
+  - Clone repository: `git clone https://github.com/UtamaDalington/Maven-SonarQube-Nexus-Jenkins-installations.git`
+  - Change directory: `cd Maven-SonarQube-Nexus-Jenkins-installations`
+  - Confirm Branch: `git branch` and `ls -al` *(to confirm you have the branch files)*
   - Install The Node Exporter: `bash install-node-exporter.sh`
   - Confirm the status shows *"Active (running)"*
   - Access the Node Exporters running on port `"9100"`, open your browser and run the below
@@ -238,7 +233,7 @@
   - Exit
   ![NodeExporter!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-26%20at%202.00.23%20PM.png)
 
-### Confirm That The Prometheus Service Disconvery Config Works As Expected
+### Confirm That The Prometheus Service Discovery Config Works As Expected
   - Open a TAB on your choice `Browser`
   - Copy the Prometheus `PublicIP Address` and paste on the `browser/tab` with port `9090` e.g `"PrometheusPublicIPAddres:9090"`
       - Once you get to the Prometheus Dashboard Click on `"Status"` and Click on `"Targets"`
