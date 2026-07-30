@@ -39,8 +39,8 @@
 2) Create An IAM Profile/Role For The Ansible Automation Engine (Dynamic Inventory)
 - Create an EC2 Service Role in IAM with `AdministratorAccess` Privilege 
 - Navigate to `IAM`
-    <img width="720" height="327" alt="1" src="https://github.com/user-attachments/assets/f8fd540b-cae2-47cb-baa4-4ea8cd750fe6" />
-  
+ <img width="720" height="327" alt="1" src="https://github.com/user-attachments/assets/f8fd540b-cae2-47cb-baa4-4ea8cd750fe6" />
+ 
     - Click on `Roles`
     - Click on `Create Role`
     - Select `Service Role`
