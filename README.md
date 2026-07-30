@@ -291,11 +291,11 @@
     ```
 - Enter `adminadmin` as the ``username`` and as the ``password``, remember this because you will need this to log into Splunk on the Browser
 - NOTE: The Password must be up to `8` characters. You can assign `adminadmin`
-    ![SplunkSetup1!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-28%20at%2010.48.24%20AM%20copy.png)
+  <img width="1193" height="293" alt="Screen Shot" src="https://github.com/user-attachments/assets/b33952de-46bb-4f25-bc8b-c941d67793d8" />
 
 - Access your Splunk Installation at http://Splunk-Server-IP:8000 and log into splunk
     - Username: `admin`, Password: `Same Password You Just Configured Above`
-    ![SplunkSetup2!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/splunk-login-page.png)
+    <img width="1015" height="467" alt="Screen Shot 1" src="https://github.com/user-attachments/assets/07965566-5d3f-4e72-8a86-54cbde2ddfb2" />
 
 - **NOTE(MANDATORY):** Once you login to the splunk Indexer
     - Click on `Settings` 
@@ -305,15 +305,16 @@
     - Click on `Save`
 
     - Confirm that 
-    ![SplunkSetup3!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-29%20at%2010.34.45%20PM.png)
+    <img width="1334" height="428" alt="Screen Shot 3" src="https://github.com/user-attachments/assets/133d599f-f31d-498e-b1a1-e731ccd88a13" />
 
     - **NOTE:** If You Do Not Complete This Part Your Splunk Configuration Won't Work
 - **IMPORTANT:** Navigate Back to your `Terminal` where you're `Configuring the Indexer`
 - **Restart Splunk** (For those changes to be captured): RUN the command `./splunk restart`
-![SplunkSetup4!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/Screen%20Shot%202023-07-02%20at%209.50.16%20PM.png)
+<img width="639" height="196" alt="Screen Shot 4" src="https://github.com/user-attachments/assets/1d7f3bca-b0bc-432a-ad0b-8c6e01531dab" />
+
 - Refresh The Splunk Tab at http://Splunk-Server-IP:8000 and *`log back into splunk`*
 - After `Logging In Back` into Splunk, Confirm that your Stat's Showing Green as shown in the screenshot below
-![SplunkSetup4!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/fwefwrfwrsgvsdsd.png) 
+<img width="1630" height="268" alt="Screen Shot 5" src="https://github.com/user-attachments/assets/1269bbfa-bbe9-49b8-9117-21f467c59434" />
 
 #### Step 2: Install The Splunk Forwarder only on the `Dev, Stage and Prod` Servers
 - **NOTE:** Execute every command mentioned bellow across all application servers in all the enviroments
@@ -368,10 +369,10 @@ cd /opt/splunk/bin
 #### Step 3: View Application Logs in Splunk
 - Login to your `Splunk Server` at http://Splunk-Server-IP:8000
 - Click on `Search and Reporting` -->> `Data Summary` -->> Select any of the displayed `Environments Host` to visualize `App Logs`
-![SplunkSetup4!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-29%20at%2011.39.03%20PM.png)
+<img width="1714" height="483" alt="Screen Shot 6" src="https://github.com/user-attachments/assets/45951d79-fcb7-4d92-bae0-b60fefaa6419" />
 
 - Application Log Indexed
-![SplunkSetup3!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-29%20at%2010.55.36%20PM.png)
+<img width="1707" height="664" alt="Screen Shot 7" src="https://github.com/user-attachments/assets/28e3b96e-c78f-46f2-9415-7aaf83ddc884" />
 
 ### Jenkins setup
 1) #### Access Jenkins
