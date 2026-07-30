@@ -17,13 +17,13 @@
 - [Splunk](https://www.splunk.com/) Splunk is an innovative technology which searches and indexes application/system log files and helps organizations derive insights from the data.
 
 # Jenkins Complete CI/CD Pipeline Project Runbook
-1) Create a GitHub Repository with the name `Jenkins-Realworld-CICD-Project` and push the code in this branch(main) to 
+1) Create a GitHub Repository with the name `End-to-End-Jenkins-CI-CD-Pipeline-Project` and push the code in this branch(main) to 
     your remote repository (your newly created repository). 
     - Go to GitHub: https://github.com
     - Login to `Your GitHub Account`
-    - Create a Repository called `Jenkins-Realworld-CICD-Project`
+    - Create a Repository called `End-to-End-Jenkins-CI-CD-Pipeline-Project`
     - Clone the Repository in the `Repository` directory/folder on your `local machine`
-    - Download the code in in this repository `"Main branch"`: https://github.com/awanmbandi/realworld-cicd-pipeline-project.git
+    - Download the code in in this repository `"Main branch"`: https://github.com/UtamaDalington/End-to-End-Jenkins-CI-CD-Pipeline-Project.git
     - `Unzip` the `code/zipped file`
     - `Copy` and `Paste` everything `from the zipped file` into the `repository you cloned` in your local
     - Open your `Terminal`
@@ -169,7 +169,7 @@
       ![SlackConfig!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-26%20at%202.08.55%20PM.png)
     
     #### NOTE: Update Your Jenkins file with your Slack Channel Name
-    - Go back to your local, open your `Jenkins-Realworld-CICD-Project` repo/folder/directory on VSCODE
+    - Go back to your local, open your `End-to-End-Jenkins-CI-CD-Pipeline-Project` repo/folder/directory on VSCODE
     - Open your `Jenkinsfile`
     - Update the slack channel name on line `"133"` (there about)
     - Change the name from whatever that is there to your Slack Channel Name `YOUR_INITIAL-cicd-pipeline-alerts`
