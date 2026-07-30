@@ -578,7 +578,7 @@ cd /opt/splunk/bin
     - Click on `Create Webhook` 
       - Name: `jenkinswebhook`
       - URL: `http://Jenkins-Server-Private-IP:8080/sonarqube-webhook`
-    ![SonarQubeSetup4!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%2011.08.26%20AM.png)
+    <img width="1307" height="596" alt="Screen Shot 3" src="https://github.com/user-attachments/assets/ac3a921b-aed5-494f-ad37-ed748e968758" />
 
     - Go ahead and Confirm in the Jenkinsfile you have the “Quality Gate Stage”. The stage code should look like the below;
     ```bash
