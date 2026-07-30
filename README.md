@@ -167,7 +167,8 @@
       - Click `Add Jenkins CI Integration`
       - Scroll down and Click `SAVE SETTINGS/CONFIGURATIONS`
       - Leave this page open
-      ![SlackConfig!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-26%20at%202.08.55%20PM.png)
+      <img width="1142" height="299" alt="Screen Shot 1" src="https://github.com/user-attachments/assets/36f5f5ba-e0ed-453c-b429-217d11dcf76b" />
+
     
     #### NOTE: Update Your Jenkins file with your Slack Channel Name
     - Go back to your local, open your `End-to-End-Jenkins-CI-CD-Pipeline-Project` repo/folder/directory on VSCODE
