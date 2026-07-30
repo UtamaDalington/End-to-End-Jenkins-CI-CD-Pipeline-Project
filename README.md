@@ -153,7 +153,7 @@
     - Launch Instance
 
 #### NOTE: Confirm and make sure you have a total of 9 VM instances
-![PipelineEnvSetup!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/Screenshot%202024-02-10%20at%202.17.03%E2%80%AFPM.png)
+<img width="1911" height="574" alt="Screenshot" src="https://github.com/user-attachments/assets/6abc77ca-4c64-466d-930c-2b32a2b42667" />
 
 12) Slack 
     - Go to the bellow Workspace and create a Private Slack Channel and name it "yourfirstname-jenkins-cicd-pipeline-alerts"
