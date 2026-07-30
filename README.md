@@ -556,8 +556,10 @@ cd /opt/splunk/bin
     - Click on `Create`
     - Name: `JavaWebApp-QualityGate`
     <img width="1429" height="607" alt="Screen Shot 9" src="https://github.com/user-attachments/assets/6be0ff57-456c-43f2-b2b8-5c79a9ebcc73" />
+	
     - Click on `Save` to Create
     <img width="1284" height="416" alt="Screen Shot" src="https://github.com/user-attachments/assets/6159e996-35ba-44ea-befa-3dbaa1ddaab2" />
+	
     - Add a Quality Gate Condition to Validate the Code Against (Code Smells or Bugs)
     <img width="1293" height="489" alt="Screen Shot 1" src="https://github.com/user-attachments/assets/92846329-e474-44ad-9d41-dd7b0d4c19e7" />
 
