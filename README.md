@@ -33,7 +33,8 @@
         - Commit changes: `git commit -m "Updated some code"`
         - Push to GitHub: `git push`
     - Confirm that the code is now available on GitHub as shown below...
-    ![ProjectRepositoryCode!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/project-repository-code2.png)
+    <img width="1615" height="780" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/6caca36f-d970-4283-bf7d-4f78dfe23209" />
+
 
 2) Create An IAM Profile/Role For The Ansible Automation Engine (Dynamic Inventory)
 - Create an EC2 Service Role in IAM with `AdministratorAccess` Privilege 
