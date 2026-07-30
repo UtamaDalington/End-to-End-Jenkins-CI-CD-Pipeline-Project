@@ -381,7 +381,7 @@ cd /opt/splunk/bin
     - Copy the Path from the Jenkins UI to get the Administrator Password
         - Run: `sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
         - Copy the password and login to Jenkins
-    ![JenkinsSetup1!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/jenkins-signup.png) 
+     <img width="1197" height="538" alt="jenkins-signup" src="https://github.com/user-attachments/assets/aed32c68-06fb-4c5f-820e-c407ed6b2ba5" />
     - Plugins: Choose `Install Suggested Plugings` 
     - Provide 
         - Username: **`admin`**
@@ -389,7 +389,7 @@ cd /opt/splunk/bin
         - `Name` and `Email` can also be admin. You can use `admin` all, as its a poc.
     - Click `Continue`
     - Click on `Start using Jenkins`
-    ![JenkinsSetup2!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%208.49.43%20AM.png) 
+    <img width="1087" height="451" alt="Screen Shot" src="https://github.com/user-attachments/assets/486f42b5-b466-4951-86b1-8df37474c351" />
 
 2)  #### Plugin installations:
     - Click on `Manage Jenkins`
@@ -408,20 +408,20 @@ cd /opt/splunk/bin
     - Click on `Install`
     - Once all plugins are installed
     - Select/Check the Box **Restart Jenkins when installation is complete and no jobs are running**
-    ![PluginInstallation!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%2010.07.32%20PM.png)
+    <img width="1874" height="894" alt="Screen Shot 1" src="https://github.com/user-attachments/assets/381eb492-b138-4362-9df1-54a8a3b87b79" />
     - Refresh your Browser and Log back into Jenkins
     - Once you log back into Jenkins
 
 3)  #### Global tools configuration:
     - Click on Manage Jenkins -->> Global Tool Configuration
-    ![JDKSetup!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/sdsdsdsdsd.png)
+    <img width="1900" height="851" alt="Screen Shot 2" src="https://github.com/user-attachments/assets/df97cd37-0c8c-473c-a324-44c22bcb4365" />
 
     - **JDK** 
         - Click on `Add JDK` -->> Make sure **Install automatically** is enabled 
         
         **Note:** By default the **Install Oracle Java SE Development Kit from the website** make sure to close that option by clicking on the image as shown below.
 
-        ![JDKSetup!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/dsdsdsdsdsd.png)
+        <img width="1837" height="748" alt="Screen Shot 3" src="https://github.com/user-attachments/assets/efc70e73-dd98-41c1-b480-a0b8bf58d23f" />
 
         * Click on `Add installer`
         * Select `Extract *.zip/*.tar.gz` 
@@ -431,12 +431,12 @@ cd /opt/splunk/bin
     - **Git** 
       - Click on `Add Git` 
       - Enable `Install automatically`(Optional)
-      ![GitSetup!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%209.36.23%20AM.png)
-    
+      <img width="1160" height="284" alt="Screen Shot 4" src="https://github.com/user-attachments/assets/47a83063-b44d-4341-a87a-edee5fd0d91a" />
+
     - **SonarQube Scanner** 
       - Click on `Add SonarQube Scanner` 
       - Enable: `Install automatically` 
-      ![SonarQubeScanner!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%209.35.20%20AM.png)
+      <img width="1160" height="284" alt="Screen Shot 4" src="https://github.com/user-attachments/assets/472f5cbf-a2ad-43cc-a971-590324017ed5" />
 
     - **Maven** 
       - Click on `Add Maven` 
@@ -444,7 +444,7 @@ cd /opt/splunk/bin
       * Name: **`localMaven`**
       * Version: Keep the default version as it is to latest
     - Click on `SAVE`
-    ![MavenSetup!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%209.44.14%20AM.png)
+    <img width="1125" height="374" alt="Screen Shot 5" src="https://github.com/user-attachments/assets/9da58200-98fc-49a7-a6b6-e12c30dc9d9b" />
     
 4)  #### Credentials setup(SonarQube, Nexus, Ansible and Slack):
     - Click on `Manage Jenkins` 
@@ -526,7 +526,7 @@ cd /opt/splunk/bin
           - ID: ``Ansible-Credential``
           - Description: `Ansible-Credential`
           - Click on `Create`   
-      ![SonarQubeServerSetup!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-27%20at%202.10.40%20PM.png)
+      <img width="1314" height="802" alt="Screen Shot 6" src="https://github.com/user-attachments/assets/dafda1f0-7f2c-4846-be31-5d8a6f3d1c1e" />
 
 5)  #### Configure system:    
     1)  - Click on ``Manage Jenkins`` 
@@ -534,7 +534,7 @@ cd /opt/splunk/bin
         - Click on Add `SonarQube`
         - Server URL: http://YOUR_SONARQUBE_PRIVATE_IP:9000
         - Server authentication token: Select `SonarQube-Token`
-        ![SonarQubeServerSetup!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%2010.13.39%20AM.png)
+        <img width="1607" height="511" alt="Screen Shot 7" src="https://github.com/user-attachments/assets/89c2c96e-c6ae-4a46-a509-dbd68dbb6f0e" />
 
     2)  - Still on `Manage Jenkins` and `Configure System`
         - Scroll down to the `Slack` Section (at the very bottom)
@@ -546,19 +546,19 @@ cd /opt/splunk/bin
             - Default channel / member id: `#PROVIDE_YOUR_CHANNEL_NAME_HERE`
             - Click on `Test Connection`
             - Click on `Save`
-        ![SlackSetup!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%2010.31.12%20AM.png)
+        <img width="1437" height="621" alt="Screen Shot 8" src="https://github.com/user-attachments/assets/d7acafac-67c7-4d91-8ccc-d0d51aa0604c" />
 
 ### SonarQube Configuration
 2)  ### Setup SonarQube GateKeeper
     - Click on `Quality Gate` 
     - Click on `Create`
     - Name: `JavaWebApp-QualityGate`
-    ![SonarQubeSetup2!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/dsdsdsdsdsdsds.png)
+    <img width="1429" height="607" alt="Screen Shot 9" src="https://github.com/user-attachments/assets/6be0ff57-456c-43f2-b2b8-5c79a9ebcc73" />
     - Click on `Save` to Create
-    ![SonarQubeSetup2!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%2011.00.25%20AM.png)
+    <img width="1284" height="416" alt="Screen Shot" src="https://github.com/user-attachments/assets/6159e996-35ba-44ea-befa-3dbaa1ddaab2" />
     - Add a Quality Gate Condition to Validate the Code Against (Code Smells or Bugs)
-    ![SonarQubeSetup3!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%2011.02.36%20AM.png)
-    
+    <img width="1293" height="489" alt="Screen Shot 1" src="https://github.com/user-attachments/assets/92846329-e474-44ad-9d41-dd7b0d4c19e7" />
+
     - Add Quality to SonarQube Project
     -  ``NOTE:`` Make sure to update the `SonarQube` stage in your `Jenkinsfile` and Test the Pipeline so your project will be visible on the SonarQube Project Dashboard.
     - Click on `Projects` 
@@ -567,9 +567,9 @@ cd /opt/splunk/bin
       - Click on `Quality Gate`
       - Select your QG `JavaWebApp-QualityGate`
 
-    ![SonarQubeSetup3!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/SDFVDSFVDFV.png)
+    <img width="1479" height="340" alt="Screen Shot 2" src="https://github.com/user-attachments/assets/b278941d-37d9-4ffb-952a-edbc1059f00d" />
 
-3)  ### Setup SonarQube Webhook to Integrate Jenkins (To pass the results to Jenkins)
+4)  ### Setup SonarQube Webhook to Integrate Jenkins (To pass the results to Jenkins)
     - Click on `Administration` and click on `Configuration` and Select `Webhook`
     - Click on `Create Webhook` 
       - Name: `jenkinswebhook`
