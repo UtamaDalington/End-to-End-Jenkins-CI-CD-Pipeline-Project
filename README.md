@@ -382,6 +382,7 @@ cd /opt/splunk/bin
         - Run: `sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
         - Copy the password and login to Jenkins
      <img width="1197" height="538" alt="jenkins-signup" src="https://github.com/user-attachments/assets/aed32c68-06fb-4c5f-820e-c407ed6b2ba5" />
+	 
     - Plugins: Choose `Install Suggested Plugings` 
     - Provide 
         - Username: **`admin`**
