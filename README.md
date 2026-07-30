@@ -762,7 +762,7 @@ echo "ansibleadmin ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
     - Click on the repository `Settings`
         - Click on `Webhooks`
         - Click `Add webhook`
-            - Payload URL: http://JENKINS-PUBLIC-IP-ADDRESS/github-webhook/
+            - Payload URL: http://JENKINS-PUBLIC-IP-ADDRESS:8080/github-webhook/
             - Content type: `application/json`
             - SSL Verification: `Disable (not recommended)`
             - Active: Confirm it is `Enable`
