@@ -231,14 +231,14 @@
       - NexusPublicIPaddress:9100   
       - SonarQubePublicIPaddress:9100   
   - Exit
-  ![NodeExporter!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-26%20at%202.00.23%20PM.png)
+  <img width="766" height="386" alt="Screen Shot" src="https://github.com/user-attachments/assets/2a833779-e313-4d8c-b4ed-9519dfe3f148" />
 
 ### Confirm That The Prometheus Service Discovery Config Works As Expected
   - Open a TAB on your choice `Browser`
   - Copy the Prometheus `PublicIP Address` and paste on the `browser/tab` with port `9090` e.g `"PrometheusPublicIPAddres:9090"`
       - Once you get to the Prometheus Dashboard Click on `"Status"` and Click on `"Targets"`
   - Confirm that Prometheus is able to reach everyone of your `Nodes`, do this by confirming the Status `"UP" (green)`
-  ![ConfigurePrometheus!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/Screenshot%202024-02-10%20at%204.44.02%E2%80%AFPM.png)
+  <img width="1803" height="696" alt="Screen Shot 1" src="https://github.com/user-attachments/assets/31b90377-523c-417f-977a-29b34f6fe246" />
 
 ### Open a New Tab on your browser for Grafana also if you've not done so already. 
   - Copy your `Grafana Instance Public IP` and put on the browser with port `3000` e.g `"GrafanaInstancePublic:3000"`
@@ -249,7 +249,7 @@
       - New Username: `admin`
       - New Password: `admin`
       - Click on `Submit`
-  ![ConfigureGrafana!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/sagdsgfsa.png)
+  <img width="1710" height="755" alt="Screen Shot 2" src="https://github.com/user-attachments/assets/51da8368-895d-4800-8855-4baac03344b2" />
   - Once you get into Grafana, follow the below steps to Import a Dashboard into Grafana to visualize your Infrastructure/App Metrics
       - Click on `Configuration/Settings` on your left
       - Click on `Data Sources`
@@ -264,12 +264,12 @@
   - Navigate to `"Create"` on your left (the `+` sign) on Grafana
       - Click on `Import`
       - Click on `Upload JSON file` and Select the `Dashboard JASON` file you just downloaded
-  ![GrafanaMetrics!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/fwefwrfwrsgvsd.png)
+  <img width="1698" height="519" alt="Screen Shot 3" src="https://github.com/user-attachments/assets/25270330-cb68-4b3f-bb1c-442c652987fa" />
       - Scrol down to `"Prometheus"` and select the `"Prometheus Data Source"` you defined ealier which is `Prometheus`
       - CLICK on `"Import"`
   - Refresh your Grafana Dashbaord 
       - Click on the `"Drop Down"` for `"Host"` and select any of the `"Instances(IP)"`
-  ![GrafanaMetrics!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/1_KimwgjULRZzONpjGFH1sTA%20(1).png)
+  <img width="1400" height="659" alt="Screen Shot 4" src="https://github.com/user-attachments/assets/9c3ce6a9-3d7f-4e33-a1b2-33e8821bf18c" />
 
 ### Setup Splunk Server/Indexer and Configure Forwarders
 #### A) SSH into your `Splunk Server` including `Dev`, `Stage` and `Prod` Instances
