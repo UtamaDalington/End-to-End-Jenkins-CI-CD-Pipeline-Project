@@ -410,6 +410,7 @@ cd /opt/splunk/bin
     - Once all plugins are installed
     - Select/Check the Box **Restart Jenkins when installation is complete and no jobs are running**
     <img width="1874" height="894" alt="Screen Shot 1" src="https://github.com/user-attachments/assets/381eb492-b138-4362-9df1-54a8a3b87b79" />
+	
     - Refresh your Browser and Log back into Jenkins
     - Once you log back into Jenkins
 
