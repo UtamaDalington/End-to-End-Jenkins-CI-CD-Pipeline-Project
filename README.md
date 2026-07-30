@@ -1,5 +1,4 @@
 # End-to-End Jenkins CI/CD Pipeline Project (Arch)
-![CompleteCICDProject!](https://lucid.app/publicSegments/view/0c183bd6-73f4-4547-93e1-5246db5e863c/image.png) 
 <img width="1096" height="768" alt="Utama-Cloud-DevOps" src="https://github.com/user-attachments/assets/8635332e-14a2-4980-8e23-513dec73d1d0" />
 
 
