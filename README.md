@@ -18,7 +18,7 @@
 - [Splunk](https://www.splunk.com/) Splunk is an innovative technology which searches and indexes application/system log files and helps organizations derive insights from the data.
 
 # Jenkins Complete CI/CD Pipeline Project Runbook
-1) Create a GitHub Repository with the name `End-to-End-Jenkins-CI-CD-Pipeline-Project` and push the code in this branch(main) to 
+1) Create a GitHub Repository with the name `End-to-End-Jenkins-CI-CD-Pipeline-Project` and push the code in this branch (main) to 
     your remote repository (your newly created repository). 
     - Go to GitHub: https://github.com
     - Login to `Your GitHub Account`
@@ -30,7 +30,7 @@
     - Open your `Terminal`
         - Add the code to git, commit and push it to your upstream branch "main or master"
         - Add the changes: `git add -A`
-        - Commit changes: `git commit -m "adding project source code"`
+        - Commit changes: `git commit -m "Updated some code"`
         - Push to GitHub: `git push`
     - Confirm that the code is now available on GitHub as shown below...
     ![ProjectRepositoryCode!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/project-repository-code2.png)
