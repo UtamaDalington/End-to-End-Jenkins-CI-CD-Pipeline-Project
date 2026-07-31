@@ -251,6 +251,7 @@
       - New Password: `admin`
       - Click on `Submit`
   <img width="1710" height="755" alt="Screen Shot 2" src="https://github.com/user-attachments/assets/51da8368-895d-4800-8855-4baac03344b2" />
+  
   - Once you get into Grafana, follow the below steps to Import a Dashboard into Grafana to visualize your Infrastructure/App Metrics
       - Click on `Configuration/Settings` on your left
       - Click on `Data Sources`
