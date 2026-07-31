@@ -272,7 +272,7 @@
 	  
   - Refresh your Grafana Dashbaord 
       - Click on the `"Drop Down"` for `"Host"` and select any of the `"Instances(IP)"`
-      - 
+        
   <img width="1400" height="659" alt="Screen Shot 4" src="https://github.com/user-attachments/assets/9c3ce6a9-3d7f-4e33-a1b2-33e8821bf18c" />
 
 ### Setup Splunk Server/Indexer and Configure Forwarders
