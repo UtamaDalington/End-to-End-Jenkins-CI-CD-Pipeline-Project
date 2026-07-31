@@ -484,8 +484,8 @@ cd /opt/splunk/bin
 
       2)  ##### Slack secret token (slack-token)
           - ###### Get The Slack Token: 
-              - Slack: https://join.slack.com/t/jjtechtowerba-zuj7343/shared_invite/zt-24mgawshy-EhixQsRyVuCo8UD~AbhQYQ
-              - Navigate to the Slack "Channel you created": `YOUR_INITIAL-cicd-pipeline-alerts`
+              - Go to the slack Workspace created (in this case: "Realworld CICD Project")
+              - Navigate to the Slack "Channel you created": `YOUR_INITIAL-jenkins-cicd-pipeline-alerts`
               - Click on your `Channel Drop Down`
               - Click on `Integrations` and Click on `Add an App`
               - Click on `Jenkins CI VIEW` and Click on `Configuration`
