@@ -157,7 +157,7 @@
 <img width="1911" height="574" alt="Screenshot" src="https://github.com/user-attachments/assets/6abc77ca-4c64-466d-930c-2b32a2b42667" />
 
 12) Slack 
-    - Go to slack, create a Workspace and give it a name (in this case: "Realworld CICD Project") 
+    - Go to slack, create a Workspace and give it a name (in this case: `Realworld CICD Project`) 
     - Create a `Private Channel` using the naming convention `YOUR_INITIAL-jenkins-cicd-pipeline-alerts`
         - **NOTE:** *`(The Channel Name Must Be Unique, meaning it must be available for use)`*
       - Visibility: Select `Private`
@@ -484,7 +484,7 @@ cd /opt/splunk/bin
 
       2)  ##### Slack secret token (slack-token)
           - ###### Get The Slack Token: 
-              - Go to the slack Workspace created (in this case: "Realworld CICD Project")
+              - Go to the slack Workspace created (in this case: `Realworld CICD Project`)
               - Navigate to the Slack "Channel you created": `YOUR_INITIAL-jenkins-cicd-pipeline-alerts`
               - Click on your `Channel Drop Down`
               - Click on `Integrations` and Click on `Add an App`
