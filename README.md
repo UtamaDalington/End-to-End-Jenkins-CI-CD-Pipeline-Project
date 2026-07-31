@@ -1,4 +1,4 @@
-# End-to-End Jenkins CI/CD Pipeline Project (Arch)
+# End-to-End Jenkins CI/CD Pipeline Project
 <img width="1096" height="768" alt="Utama-Cloud-DevOps" src="https://github.com/user-attachments/assets/8635332e-14a2-4980-8e23-513dec73d1d0" />
 
 
