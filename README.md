@@ -267,11 +267,11 @@
       - Click on `Import`
       - Click on `Upload JSON file` and Select the `Dashboard JASON` file you just downloaded
         
-        
   <img width="1698" height="519" alt="Screen Shot 3" src="https://github.com/user-attachments/assets/25270330-cb68-4b3f-bb1c-442c652987fa" />
   
       - Scrol down to `"Prometheus"` and select the `"Prometheus Data Source"` you defined ealier which is `Prometheus`
       - CLICK on `"Import"`
+	  
   - Refresh your Grafana Dashbaord 
       - Click on the `"Drop Down"` for `"Host"` and select any of the `"Instances(IP)"`
         
