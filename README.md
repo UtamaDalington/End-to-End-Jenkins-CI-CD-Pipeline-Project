@@ -626,16 +626,16 @@ cd /opt/splunk/bin
 
     ### A. Pipeline Test Results 
     - Jenkins Pipeline Job
-    ![JenkinsJobResult!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/jenkins-pipeline-first-run.png)
+    <img width="1898" height="723" alt="1" src="https://github.com/user-attachments/assets/b8807085-f414-4145-a922-b751d85cc300" />
 
     - SonarQube Code Inspection Result
-    ![SonarQubeResult!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/sonarqube-result.png)
+    <img width="1307" height="290" alt="2" src="https://github.com/user-attachments/assets/07b8c5a4-8d74-459c-bd45-ae0a7dfbc76c" />
 
     - Slack Continuous Feedback Alert
-    ![SlackResult!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/slack-first-notification-from-pipeline-job2.png)
+    <img width="1271" height="278" alt="3" src="https://github.com/user-attachments/assets/4132bd41-3c24-49f3-b331-fb9223f2a101" />
 
     - SonarQube GateKeeper Webhook Payload
-    ![SonarQubeGateKeeper!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/sonarqube-webhook-forGateKepper-Result.png)
+    <img width="1368" height="794" alt="4" src="https://github.com/user-attachments/assets/8c224ba5-a291-4e9a-b781-de8a403a78dd" />
 
     ### B. Troubleshooting (Possible Issues You May Encounter and Suggested Solutions)
     1) **1st ISSUE:** If you experience a long wait time at the level of `GateKeeper`, please check if your `Sonar Webhook` is associated with your `SonarQube Project` with `SonarQube Results`
@@ -687,7 +687,7 @@ cd /opt/splunk/bin
           - **MEANING:** *Move all 3 repositories to the Box on your Right*
         - Click `Create Repository`
 
-    ![NexusSetup!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-27%20at%203.42.03%20PM.png) 
+    <img width="1613" height="612" alt="5" src="https://github.com/user-attachments/assets/16b068e7-d5ba-4df9-8f3d-686eb2c9486a" />
 
 ### Update Maven POM and Integrate/Configure Nexus With Jenkins
 A) Update Maven `POM.xml` file
@@ -736,10 +736,10 @@ A) Update Maven `POM.xml` file
 - Test your Pipeline to `Make Sure That The Artifacts Upload Stage Succeeds` including the `Deployments`.
     - Navigate to Jenkins Dashboard (Run/Test The Job) 
     - Click on `Build Now`
-![PipelineStagesArtifactSuccess!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-27%20at%204.44.30%20PM.png)
+<img width="1888" height="682" alt="6" src="https://github.com/user-attachments/assets/49ff565b-050c-4d94-8b66-5eb336e32802" />
 
 - Navigate to `Nexus` as well to confirm that the artifact was `Stored` in the `maven-project-releases` repository
-![ArtifactStored!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-27%20at%204.08.33%20PM.png)
+<img width="1712" height="684" alt="7" src="https://github.com/user-attachments/assets/f827750d-49b7-4b3c-a4a3-cb6e92b72a88" />
 
 ## Confirm Ansible Deployment to `Dev`, `Stage` and `Prod` Was Successful
 - ((NOTE)): That you passed the Userdata in the `Jenkins/Maven/Ansible` and `Dev,Stage` and `Prod` Instances to Configure the Environments, then you should not have issues. And if that is the case, you do not have to perform the operations that follows this step to re-configure `Anasible` and `Tomcat` again. You just Have to confirm, the Configurations where all Successful and Move to the Next step to Setup a CI Integration Between `GitHub` and `Jenkins`.
@@ -798,13 +798,13 @@ echo "ansibleadmin ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 ### TEST PIPELINE DEPLOYMENT
 - Confirm/Confirm that your deployments where all successful accross all Environments
-![PipelineStagesCompleted!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-27%20at%204.44.30%20PM.png)
+<img width="1888" height="682" alt="8" src="https://github.com/user-attachments/assets/a6fcce2a-e8e0-4336-bbe0-a54455af130e" />
 
 - Verify/Confirm Slack Success Feedback.
-![SlackSuccessAllStages!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-27%20at%205.06.44%20PM.png)
+<img width="1271" height="278" alt="9" src="https://github.com/user-attachments/assets/7bbb19dc-9b6a-4b6f-9f3c-efc7ae38951f" />
 
 - Confirm Access to your application: http://Dev-or-Stage-or-Prod-PubIP:8080/webapp/
-![FinalProductDisplay!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/blob/zdocs/images/SDFVDSFVDFVsdsd.png)
+<img width="1648" height="392" alt="10" src="https://github.com/user-attachments/assets/462df670-d96e-434e-beb7-e9757dd2f548" />
 
 ### NOTE: That By completing this project, you are now considered a Professional DevOps Engineer.  
 You've been able to accomplish something very unique and special which most people only dream of in their IT journey. Remember that during an interview, you may be asked some challenging questions or be faced with a trial assignment that require you to both utilize your existing skillsets and think out of the box. During this time you must be very confident and determined in your pursuit. 
